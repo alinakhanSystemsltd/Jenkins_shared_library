@@ -1,8 +1,8 @@
 def call(Map config = [:]) {
-  slackSend (
-    color: "${config.slackSendColor}",
-    message: "${config.message}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
-  )
+//   slackSend (
+//     color: "${config.slackSendColor}",
+//     message: "${config.message}: Job '${env.JOB_NAME} [${env.BUILD_NUMBER}]' (${env.BUILD_URL})"
+//   )
 
   // send to email
   emailext (
